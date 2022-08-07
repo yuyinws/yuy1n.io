@@ -22,16 +22,15 @@
           <div i-ri-lightbulb-line class="md:hidden" />
         </router-link>
         <router-link to="/bookmarks" title="Bookmarks">
-          <div i-ri-bookmark-line />
+          <span class="lt-md:hidden">Bookmarks</span>
+          <div i-ri-bookmark-line md:hidden />
         </router-link>
         <router-link to="/notes" title="Notes">
-          <div i-ri-sticky-note-line />
+          <span class="lt-md:hidden">Notes</span>
+          <div i-ri-sticky-note-line md:hidden />
         </router-link>
         <a href="https://github.com/yuyinws" target="_blank" title="GitHub" class="lt-md:hidden">
           <div i-uil-github-alt />
-        </a>
-        <a href="/feed.xml" target="_blank" title="RSS" class="lt-md:hidden">
-          <div i-la-rss-square style="font-size:1.25rem; margin: 0 -0.125rem;" />
         </a>
         <toggle-theme />
       </div>

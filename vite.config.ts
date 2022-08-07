@@ -3,13 +3,13 @@ import { defineConfig } from 'vite'
 import Vue from '@vitejs/plugin-vue'
 import Pages from 'vite-plugin-pages'
 import Components from 'unplugin-vue-components/vite'
-// import fs from 'fs-extra'
+import fs from 'fs-extra'
 import IconsResolver from 'unplugin-icons/resolver'
 import Icons from 'unplugin-icons/vite'
 import AutoImport from 'unplugin-auto-import/vite'
 import Markdown from 'vite-plugin-vue-markdown'
 import { VitePWA } from 'vite-plugin-pwa'
-// import matter from 'gray-matter'
+import matter from 'gray-matter'
 import Inspect from 'vite-plugin-inspect'
 import LinkAttributes from 'markdown-it-link-attributes'
 import Unocss from 'unocss/vite'
@@ -31,18 +31,18 @@ export default defineConfig({
     // https://github.com/hannoeru/vite-plugin-pages
     Pages({
       extensions: ['vue', 'md'],
-      // pagesDir: 'pages',
-      // extendRoute(route) {
-      //   const path = resolve(__dirname, route.component.slice(1))
+      pagesDir: 'pages',
+      extendRoute(route) {
+        const path = resolve(__dirname, route.component.slice(1))
 
-      //   if (!path.includes('projects.md')) {
-      //     const md = fs.readFileSync(path, 'utf-8')
-      //     const { data } = matter(md)
-      //     route.meta = Object.assign(route.meta || {}, { frontmatter: data })
-      //   }
+        if (!path.includes('projects.md')) {
+          const md = fs.readFileSync(path, 'utf-8')
+          const { data } = matter(md)
+          route.meta = Object.assign(route.meta || {}, { frontmatter: data })
+        }
 
-      //   return route
-      // },
+        return route
+      },
     }),
 
     // https://github.com/antfu/unplugin-auto-import
