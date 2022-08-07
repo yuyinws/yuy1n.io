@@ -21,7 +21,7 @@ categories:
 
 2. 设置clash core自启动，创建一个vbs文件，内容如下：
 
-   ```vbs
+   ```
    Dim WShell
    Set WShell = CreateObject("WScript.Shell")
    WShell.Run "D:\program\clash-windows-386.exe", 0

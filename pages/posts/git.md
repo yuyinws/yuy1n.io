@@ -10,7 +10,7 @@ categories:
 ---
 
 ## clone
-``` console
+```
 # 克隆远程master分支到本地
 git clone <origin-url>
 
@@ -20,7 +20,7 @@ git clone -b <origin-branch> <origin-url>
 
 ## 删除分支
 
-``` console
+```
 # 删除本地分支
 git branch -d <branch-name>
 
@@ -29,7 +29,7 @@ git push origin --delete <branch-name>
 ```
 
 ## stash
-``` console
+```
 > stash用于跨分支保存和恢复修改记录
 # 保存
 git stash save <message>
@@ -50,7 +50,7 @@ git push origin master -f
 
 ## 远程仓库
 
-```console
+```
 # 查看远程仓库
 git remote -v
 
@@ -62,18 +62,18 @@ git remote set-url origin <origin-url>
 ```
 
 ## git config
-```console
+```
 vim .git/config
 ```
 > 设置仓库用户名
-``` config
+```
 [user]
         name = <username>
         email = <email>
 ```
 
 > 本地保存登录信息
-``` config
+```
 [credential]
         helper = store
 ```
@@ -83,13 +83,13 @@ vim .git/config
 
 *将指定的commit提交到当前分支*
 
-``` console
+```
 git cherry-pick <commit-id>
 ```
 
 *将[commitA,commitB]之间的所有commit提交到当前分支*
 
-``` console
+```
 git cherry-pick <commitA-id>^..<commitB-id>
 ```
 

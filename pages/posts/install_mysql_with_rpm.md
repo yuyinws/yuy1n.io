@@ -51,6 +51,6 @@ mysql -u root -p
 输入刚才记录的密码
 ### 修改密码
 必须修改密码之后才可以进行其他数据库操作
-``` mysql
+```
 alter user user() identified by 'password';
 ```

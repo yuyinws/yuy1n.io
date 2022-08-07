@@ -12,7 +12,7 @@ categories:
 <!-- more -->
 ### 解决方法
 修改下面两个文件内容
-``` conf
+```
 #php.ini，单位秒
 ...
 max_execution_time = 3000
