@@ -4,13 +4,15 @@ date: 2022-04-29
 description: 前端项目增加Husky Eslint Prettier Commitizen
 tags:
  - project
-categories:
- - 前端
 ---
 
 ### 前言
 
 前端项目的规范一般分为代码格式规范与Git commit规范，代码格式规范一般使用`Eslint`,`Prettier`来实现，git commit规范则使用`Commitizen`来实现。为了能在git hooks中自动执行这2个检查，又会引入`Husky`、`Lint-stage`和`commitlint`。它们之间的关系如下图：
+
+![Snipaste_2022-08-08_21-40-11](https://s2.loli.net/2022/08/08/cXDAxIlbZL6jJNh.png)
+
+
 
 
 本文对这几种工具的安装与联动进行了详细说明。

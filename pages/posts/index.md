@@ -1,5 +1,5 @@
 ---
-title: Blog - YuYinWS
+title: Blog
 display: ''
 ---
 

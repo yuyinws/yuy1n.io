@@ -6,8 +6,6 @@ description: Crontab+MySQLdump
 tags:
  - Linux
  - MySQL
-categories: 
- - Linux
 ---
 ## mysqldump
 mysqldump是MySQL自带的一个备份命令，可以将整个数据库备份成一个sql文件，文件内部都是sql语句。

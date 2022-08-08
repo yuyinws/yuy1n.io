@@ -1,12 +1,9 @@
 ---
 title: 前端踩坑记录及小技巧
 date: 2020-12-17
-description: 长期更新
 tags:
  - frontend
  - JavaScript
-categories: 
- - 前端
 weight: 1
 ---
 
@@ -58,14 +55,12 @@ function GetQueryString(name) {
 ### CSS-超出div用...替代
 在css样式中加入
 ``` css
+.hidden {
     text-overflow:-o-ellipsis-lastline;
     overflow: hidden;
     display: -webkit-box;
     -webkit-line-clamp: 1;
     line-clamp:1;
     -webkit-box-orient: vertical;
+}
 ```
-前后效果对比 
-
-![before](https://i.loli.net/2021/03/12/bluHVWswS31XZYI.jpg)
-![before](https://i.loli.net/2021/03/12/bluHVWswS31XZYI.jpg)

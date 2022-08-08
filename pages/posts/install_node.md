@@ -5,8 +5,6 @@ description: 如何在CentOS7下安装Node
 tags:
  - Node
  - SHELL
-categories: 
- - 后端
 ---
 
 脚本内容

@@ -1,12 +1,9 @@
 ---
 title: 图片base64压缩
 date: 2021-11-23
-description: 压缩一个图片的base64编码
 tags:
  - base64
  - JavaScript
-categories: 
- - 前端
 ---
 
 ``` js

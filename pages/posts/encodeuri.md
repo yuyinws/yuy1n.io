@@ -6,11 +6,6 @@ description: 分析encodeURI与encodeURIComponent的区别
 tags:
  - JavaScript
  - frontend
-keyword: 
-- encodeURI
-- encodeURIComponent
-categories: 
- - 前端
 ---
 ## 作用
 [encodeURI()](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/encodeURI) 和 [encodeURIComponent()](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/encodeURIComponent) 都用于对字符串的转义，区别在于2个函数的转义范围不同。

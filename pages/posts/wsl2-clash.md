@@ -4,9 +4,6 @@ date: 2022-03-06
 description: 让WSL2走Windows clash代理
 tags:
  - clash
-categories: 
- - 其他
-
 ---
 
 ## windows clash设置

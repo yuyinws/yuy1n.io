@@ -4,12 +4,7 @@ date: 2021-03-12
 tags:
  - JavaScript
  - frontend
-categories: 
- - 前端
 ---
-
-总结一下js中深拷贝与浅拷贝的区别以及深拷贝的实现方式。
-<!-- more -->
 
 ## 两段代码
 先来看2段代码

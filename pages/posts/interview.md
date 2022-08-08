@@ -4,8 +4,6 @@ date: 2021-05-31
 tags:
  - JavaScript
  - frontend
-categories: 
- - 前端
 ---
 > 记录一下面试题
 ## JS

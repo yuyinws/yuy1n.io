@@ -3,8 +3,6 @@ title: Vue组件事件存在默认参数问题
 date: 2022-03-31
 tags:
  - Vue
-categories: 
- - 前端
 ---
 
 ### 第三方组件

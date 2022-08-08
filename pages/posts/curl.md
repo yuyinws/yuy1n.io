@@ -3,9 +3,6 @@ title: PHP cURL函数封装
 date: 2021-01-22
 tags: 
   - PHP
-description: 封装CURL函数
-categories : 后端
-comments : true
 ---
 
 ## CURL

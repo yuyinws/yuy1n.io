@@ -6,9 +6,6 @@ tags:
  - JavaScript
  - frontend
  - CSS
-categories: 
- - 前端
- - CSS
 ---
 ## 父容器属性
 ### flex-direction(决定子项目主轴排列方式)

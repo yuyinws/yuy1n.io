@@ -5,8 +5,6 @@ description: Git
 weight: 2
 tags:
  - git
-categories: 
- - 其他
 ---
 
 ## clone

@@ -1,16 +1,10 @@
 ---
 title: 网络图片base64化
 date: 2021-09-30
-description: 将一个URL形式的图片转化为base64格式
 tags:
  - base64
  - JavaScript
-categories: 
- - 前端
 ---
-
-将一个URL形式的图片转化为base64格式
-<!-- more -->
 
 ### 通过http请求获取图片的blob流
 以axios为例

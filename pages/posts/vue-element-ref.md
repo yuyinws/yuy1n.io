@@ -4,8 +4,6 @@ date: 2022-02-23
 tags:
  - base64
  - JavaScript
-categories: 
- - 前端
 ---
 
 在Vue2中，元素的ref属性可以通过`$ref`获取，示例代码：

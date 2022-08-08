@@ -4,8 +4,6 @@ date: 2021-11-29
 tags:
  - JavaScript
  - frontend
-categories: 
- - 前端
 ---
 
 需要使用ES6+语法的场景

@@ -5,8 +5,6 @@ sidebarDepth: 0
 tags:
  - Linux
  - nginx
-categories: 
- - Linux
 ---
 
 通过添加yum源的方式安装nginx

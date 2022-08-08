@@ -6,8 +6,6 @@ description: 使用rpm包安装mysql
 tags:
  - Linux
  - MySQL
-categories: 
- - Linux
 ---
 
 ### 下载rpm包

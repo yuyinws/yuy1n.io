@@ -3,8 +3,6 @@ title: github actions配置备份
 date: 2022-01-20
 tags:
   - github
-categories:
-  - 其他
 ---
 
 ## NodeJS
