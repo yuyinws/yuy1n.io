@@ -3,30 +3,26 @@
 
 <template>
   <header class="header z-40">
-    <router-link
-      class="w-10 h-10 absolute lg:fixed m-6 select-none outline-none"
-      to="/"
-      focusable="false"
-    >
-      <img src="/logo.svg" alt="logo">
+    <router-link class="w-10 h-10 absolute lg:fixed m-6 select-none outline-none" to="/" focusable="false">
+      <img class="logo" src="/logo.svg" alt="logo">
     </router-link>
     <nav class="nav">
       <div class="spacer" />
       <div class="right">
         <router-link to="/posts" title="Blog">
-          <span class="lt-md:hidden">Blog</span>
+          <span class="lt-md:hidden">文章</span>
           <div i-ri-article-line md:hidden />
         </router-link>
         <router-link to="/projects" title="Projects">
-          <span class="lt-md:hidden">Projects</span>
+          <span class="lt-md:hidden">项目</span>
           <div i-ri-lightbulb-line class="md:hidden" />
         </router-link>
         <router-link to="/bookmarks" title="Bookmarks">
-          <span class="lt-md:hidden">Bookmarks</span>
+          <span class="lt-md:hidden">书签</span>
           <div i-ri-bookmark-line md:hidden />
         </router-link>
         <router-link to="/notes" title="Notes">
-          <span class="lt-md:hidden">Notes</span>
+          <span class="lt-md:hidden">笔记</span>
           <div i-ri-sticky-note-line md:hidden />
         </router-link>
         <a href="https://github.com/yuyinws" target="_blank" title="GitHub" class="lt-md:hidden">
@@ -43,10 +39,18 @@
   margin-bottom: 0;
 }
 
-.logo {
-  position: absolute;
-  top: 1.5rem;
-  left: 1.5rem;
+.logo:hover {
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
 }
 
 .nav {
@@ -57,7 +61,7 @@
   box-sizing: border-box;
 }
 
-.nav > * {
+.nav>* {
   margin: auto;
 }
 
@@ -85,7 +89,7 @@
   grid-auto-flow: column;
 }
 
-.nav .right > * {
+.nav .right>* {
   margin: auto;
 }
 </style>
