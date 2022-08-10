@@ -16,6 +16,10 @@ export function aboutMe() {
   })
   const hobbies = ref(['Coding','Moving','Music'])
 
+  onMounted(() => {
+    console.log('Hello World!')
+  })
+
   return {
     name,
     tecStack,
