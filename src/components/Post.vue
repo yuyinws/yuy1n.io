@@ -15,7 +15,7 @@ const route = useRoute()
 <template>
   <div class="prose" m-auto mb-8>
     <h1 mb-0>
-      {{ frontmatter.title }}
+      {{ frontmatter.display ?? frontmatter.title }}
     </h1>
     <p v-if="frontmatter.date" class="opacity-50 !-mt-2">
       {{ formatDate(frontmatter.date) }} <span v-if="frontmatter.duration">· {{ frontmatter.duration }}</span>

@@ -1,6 +1,6 @@
 ---
-title: Blog
-display: ''
+title: Blog - YuYinWS
+display: 'Blog'
 ---
 
 <ListPosts />

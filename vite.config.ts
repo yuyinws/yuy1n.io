@@ -13,7 +13,9 @@ import matter from 'gray-matter'
 import Inspect from 'vite-plugin-inspect'
 import LinkAttributes from 'markdown-it-link-attributes'
 import Unocss from 'unocss/vite'
+import anchor from 'markdown-it-anchor'
 import Shiki from 'markdown-it-shiki'
+import { slugify } from './scripts/slugify'
 
 export default defineConfig({
   resolve: {
@@ -106,6 +108,13 @@ export default defineConfig({
             target: '_blank',
             rel: 'noopener',
           },
+        })
+        md.use(anchor, {
+          slugify,
+          permalink: anchor.permalink.linkInsideHeader({
+            symbol: '#',
+            renderAttrs: () => ({ 'aria-hidden': 'true' }),
+          }),
         })
       },
     }),
