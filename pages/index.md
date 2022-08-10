@@ -12,7 +12,7 @@ export function aboutMe() {
   const social = reactive({
     Github: 'https://github.com/yuyinws',
     Steam: 'https://steamcommunity.com/profiles/76561198340841543',
-    Weibo: 'https://weibo.com/u/1944843262'
+    Twitter: 'https://twitter.com/yuyinws'
   })
   const hobbies = ref(['Coding','Moving','Music'])
 
@@ -24,3 +24,11 @@ export function aboutMe() {
   }
 }
 ```
+
+Find Me On:
+<br>
+<div flex gap-2>
+  <a href="https://github.com/yuyinws">Github</a>
+  <a href="https://steamcommunity.com/id/yuyinws/">Steam</a>
+  <a href="https://twitter.com/yuyinws">Twitter</a>
+</div>

@@ -54,10 +54,6 @@ watch(route, (val) => {
           <span :class="`${item.style} lt-md:hidden`">{{ item.name }}</span>
           <div :class="`${item.icon} ${item.style} md:hidden`" />
         </router-link>
-
-        <!-- <a href="https://github.com/yuyinws" target="_blank" title="GitHub" class="lt-md:hidden">
-          <div i-uil-github-alt />
-        </a> -->
         <toggle-theme />
       </div>
     </nav>
