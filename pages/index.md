@@ -12,7 +12,9 @@ export function aboutMe() {
   const social = reactive({
     Github: 'https://github.com/yuyinws',
     Steam: 'https://steamcommunity.com/profiles/76561198340841543',
-    Twitter: 'https://twitter.com/yuyinws'
+    Twitter: 'https://twitter.com/yuyinws',
+    Keylol: 'https://keylol.com/suid-518292',
+    V2ex: 'https://www.v2ex.com/member/lyc575757',
   })
   const hobbies = ref(['Coding','Moving','Music'])
 
@@ -35,4 +37,6 @@ Find Me On:
   <a href="https://github.com/yuyinws">Github</a>
   <a href="https://steamcommunity.com/id/yuyinws/">Steam</a>
   <a href="https://twitter.com/yuyinws">Twitter</a>
+  <a href="https://keylol.com/suid-518292">Keylol</a>
+  <a href="https://www.v2ex.com/member/lyc575757">V2ex</a>
 </div>

@@ -1,8 +1,8 @@
 <script setup lang="ts">
 useHead({
-  title: 'Vitesse',
+  title: 'YuYinWS',
   meta: [
-    { name: 'description', content: 'Opinionated Vite Starter Template' },
+    { name: 'description', content: 'YuYinWS Blog' },
     {
       name: 'theme-color',
       content: computed(() => isDark.value ? '#00aba9' : '#ffffff'),
