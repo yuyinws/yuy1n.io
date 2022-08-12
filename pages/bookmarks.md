@@ -20,3 +20,7 @@ display: Bookmarks
 - [CodePen](https://codepen.io/)
 - [CodeSandbox](https://codesandbox.io/)
 - [StackBlitz](https://stackblitz.com/)
+
+### Deploy 📦
+- [Vercel](https://vercel.com)
+- [Netlify](https://www.netlify.com/)
