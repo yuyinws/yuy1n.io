@@ -11,12 +11,12 @@ export function aboutMe() {
   const tecStack = ref(['Vue','TypeScript','Vite','Git','Node'])
   const social = reactive({
     Github: 'https://github.com/yuyinws',
-    Steam: 'https://steamcommunity.com/profiles/76561198340841543',
+    Steam: 'https://steamcommunity.com/id/yuyinws',
     Twitter: 'https://twitter.com/yuyinws',
     Keylol: 'https://keylol.com/suid-518292',
     V2ex: 'https://www.v2ex.com/member/lyc575757',
   })
-  const hobbies = ref(['Coding','Moving','Music'])
+  const hobbies = ref(['Coding','Movie','Music'])
 
   onMounted(() => {
     console.log('Hello World!')
