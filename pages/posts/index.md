@@ -3,4 +3,4 @@ title: Posts - YuYinWS
 display: 'Posts'
 ---
 
-<ListPosts />
+<ListPosts tag="test" />

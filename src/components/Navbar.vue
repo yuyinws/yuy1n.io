@@ -11,6 +11,12 @@ const navList = ref([
     style: '',
   },
   {
+    name: 'Tags',
+    path: 'tags',
+    icon: 'i-ri:price-tag-line',
+    style: '',
+  },
+  {
     name: 'Projects',
     path: 'projects',
     icon: 'i-ri-lightbulb-line',
