@@ -12,10 +12,12 @@ declare module '@vue/runtime-core' {
     ListPosts: typeof import('./components/ListPosts.vue')['default']
     Navbar: typeof import('./components/Navbar.vue')['default']
     Post: typeof import('./components/Post.vue')['default']
+    RiGithubLine: typeof import('~icons/ri/github-line')['default']
     RiMoonLine: typeof import('~icons/ri/moon-line')['default']
     RiSunLine: typeof import('~icons/ri/sun-line')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
+    Test: typeof import('./components/Test.vue')['default']
     ToggleTheme: typeof import('./components/ToggleTheme.vue')['default']
   }
 }

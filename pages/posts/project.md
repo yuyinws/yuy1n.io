@@ -4,6 +4,7 @@ date: 2022-04-29
 description: 前端项目增加Husky Eslint Prettier Commitizen
 tags:
  - project
+pin: 1
 ---
 
 ### 前言
