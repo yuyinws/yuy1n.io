@@ -3,6 +3,46 @@ title: Notes - YuYinWS
 display: Notes
 ---
 
+## Vue生产环境开启DevTools
+```js
+// Vue2.x
+let Vue, walker, node; 
+walker = document.createTreeWalker(document.body, 1); 
+while ((node = walker.nextNode())) { 
+	if (node.__vue__) { 
+		Vue = node.__vue__.$options._base; 
+		if (!Vue.config.devtools) { 
+			Vue.config.devtools = true; 
+			if (window.__VUE_DEVTOOLS_GLOBAL_HOOK__){
+				window.__VUE_DEVTOOLS_GLOBAL_HOOK__.emit("init", Vue);
+			} 
+		} 
+		break; 
+	} 
+}
+
+// Vue3.x
+let vue, node, walker; 
+walker = document.createTreeWalker(document.body, 1); 
+while ((node = walker.nextNode())) { 
+	if (node.__vue_app__) { 
+		vue = node.__vue_app__; 
+		if (!vue.config.devtools) { 
+			vue.config.devtools = true; 
+			if (window.__VUE_DEVTOOLS_GLOBAL_HOOK__) {
+				window.__VUE_DEVTOOLS_GLOBAL_HOOK__.emit("app:init", vue,vue.version,{
+          Fragment: 'Fragment',
+          Text: 'Text',
+          Comment: 'Comment',
+          Static: 'Static'
+        });
+			} 
+		} 
+		break; 
+	} 
+}
+```
+
 ## shamefully-hoist
 > pnpm官方提供的.npmrc配置项，当pnpm运行报错时配上这个一般就可以解决
 ```
