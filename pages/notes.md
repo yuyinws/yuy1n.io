@@ -25,21 +25,21 @@ while ((node = walker.nextNode())) {
 let vue, node, walker; 
 walker = document.createTreeWalker(document.body, 1); 
 while ((node = walker.nextNode())) { 
-	if (node.__vue_app__) { 
-		vue = node.__vue_app__; 
-		if (!vue.config.devtools) { 
-			vue.config.devtools = true; 
-			if (window.__VUE_DEVTOOLS_GLOBAL_HOOK__) {
-				window.__VUE_DEVTOOLS_GLOBAL_HOOK__.emit("app:init", vue,vue.version,{
+  if (node.__vue_app__) { 
+    vue = node.__vue_app__; 
+     if (!vue.config.devtools) { 
+      vue.config.devtools = true; 
+       if (window.__VUE_DEVTOOLS_GLOBAL_HOOK__) {
+        window.__VUE_DEVTOOLS_GLOBAL_HOOK__.emit("app:init", vue,vue.version,{
           Fragment: 'Fragment',
           Text: 'Text',
           Comment: 'Comment',
           Static: 'Static'
         });
-			} 
-		} 
-		break; 
-	} 
+      } 
+   } 
+   break; 
+ } 
 }
 ```
 
