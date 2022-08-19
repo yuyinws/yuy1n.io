@@ -46,13 +46,13 @@ function onClick(word: string) {
   <div flex flex-wrap gap-5>
     <div
       v-for="(item, index) in tagArr" :key="index" flex items-center justify-center ease transition-all cursor-pointer relative p-3 bg-gray-200 dark:bg-gray-700
-      rounded-xl text-black w-30 dark:text-white h-15 hover:w-35 hover:h-18 flex-shrink-0 flex-grow-0
+      rounded-xl text-black w-30 dark:text-white h-15 hover:w-35 hover:h-18 flex-shrink-0 flex-grow-0 shadow-md dark:shadow-gray-600
       @click="onClick(item.name)"
     >
-      <div>
+      <div font-bold>
         {{ item.name }}
       </div>
-      <div absolute top-0 right-2>
+      <div text-gray-500 text-sm italic absolute top-1 right-2>
         {{ item.count }}
       </div>
     </div>
