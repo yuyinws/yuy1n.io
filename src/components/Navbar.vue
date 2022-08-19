@@ -10,12 +10,12 @@ const navList = ref([
     icon: 'i-ri-article-line',
     style: '',
   },
-  // {
-  //   name: 'Tags',
-  //   path: 'tags',
-  //   icon: 'i-ri:price-tag-line',
-  //   style: '',
-  // },
+  {
+    name: 'Tags',
+    path: 'tags',
+    icon: 'i-ri:price-tag-line',
+    style: '',
+  },
   {
     name: 'Projects',
     path: 'projects',

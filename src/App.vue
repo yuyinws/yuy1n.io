@@ -19,11 +19,9 @@ useHead({
 </script>
 
 <template>
-  <ClientOnly>
-    <Navbar />
-    <main class="px-7 py-10">
-      <router-view />
-      <Footer />
-    </main>
-  </ClientOnly>
+  <Navbar />
+  <main class="px-7 py-10">
+    <router-view />
+    <Footer />
+  </main>
 </template>
