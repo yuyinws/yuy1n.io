@@ -3,6 +3,8 @@ title: Notes - YuYinWS
 display: Notes
 ---
 
+{toc}
+
 ## Vue生产环境开启DevTools
 ```js
 // Vue2.x

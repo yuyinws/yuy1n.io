@@ -7,6 +7,8 @@ tags:
 weight: 1
 ---
 
+{toc}
+
 ## 踩坑
 ### vant-ui与Vue引入顺序
 使用cdn引入vant和vue需要注意顺序，官方文档实例:

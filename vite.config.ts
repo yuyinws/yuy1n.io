@@ -15,6 +15,7 @@ import LinkAttributes from 'markdown-it-link-attributes'
 import Unocss from 'unocss/vite'
 import anchor from 'markdown-it-anchor'
 import Shiki from 'markdown-it-shiki'
+import { tocPlugin } from '@mdit-vue/plugin-toc'
 import { slugify } from './scripts/slugify'
 
 export default defineConfig({
@@ -115,6 +116,9 @@ export default defineConfig({
             symbol: '#',
             renderAttrs: () => ({ 'aria-hidden': 'true' }),
           }),
+        })
+        md.use(tocPlugin, {
+          pattern: /^\{toc\}$/i,
         })
       },
     }),
