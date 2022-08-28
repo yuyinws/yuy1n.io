@@ -79,20 +79,19 @@ vim .git/config
 ## cherry-pick
 > 用于跨分支转移commit
 
-*将指定的commit提交到当前分支*
+将指定的commit提交到当前分支
 
 ```
 git cherry-pick <commit-id>
 ```
 
-*将[commitA,commitB]之间的所有commit提交到当前分支*
+将[commitA,commitB]之间的所有commit提交到当前分支
 
 ```
 git cherry-pick <commitA-id>^..<commitB-id>
 ```
 
-*参数*
+-x 
 
--x 在提交信息的末尾追加一行`(cherry picked from commit ...)`，方便以后查到这个提交是如何产生的。
-
+在提交信息的末尾追加一行`(cherry picked from commit ...)`，方便以后查到这个提交是如何产生的。
 
