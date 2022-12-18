@@ -1,6 +1,5 @@
 <script setup lang="ts">
 import { useRoute } from 'vue-router'
-import Giscus from '@giscus/vue'
 import { formatDate, isDark } from '~/logics'
 
 const { frontmatter } = defineProps({
@@ -34,26 +33,6 @@ const route = useRoute()
       ← Back
     </router-link>
   </div>
-
-  <client-only>
-    <div style="width: 630px;margin: auto">
-      <Giscus
-        id="comments"
-        repo="yuyinws/yuy1n.io"
-        repo-id="R_kgDOHxxxig="
-        category="Announcements"
-        category-id="DIC_kwDOHxxxis4CTInX-hVS"
-        mapping="pathname"
-        term="Welcome to @giscus/react component!"
-        reactions-enabled="1"
-        emit-metadata="0"
-        input-position="top"
-        :theme="isDark ? 'dark' : 'light'"
-        lang="zh-CN"
-        loading="lazy"
-      />
-    </div>
-  </client-only>
 </template>
 
 <style scoped lang="scss">
