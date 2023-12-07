@@ -1,14 +1,23 @@
 {
-  "private": true,
   "type": "module",
+  "private": true,
   "scripts": {
     "build": "nuxt build",
     "dev": "nuxt dev",
     "generate": "nuxt generate",
     "preview": "nuxt preview"
   },
+  "dependencies": {
+    "@nuxtjs/color-mode": "^3.3.2",
+    "@vueuse/nuxt": "^10.7.0"
+  },
   "devDependencies": {
+    "@antfu/eslint-config": "^2.3.4",
+    "@iconify/json": "^2.2.153",
     "@nuxt/content": "^2.9.0",
-    "nuxt": "^3.8.2"
+    "@unocss/nuxt": "^0.58.0",
+    "eslint": "^8.55.0",
+    "nuxt": "^3.8.2",
+    "unplugin-turbo-console": "^1.0.8"
   }
 }
