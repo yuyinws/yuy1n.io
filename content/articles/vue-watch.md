@@ -45,7 +45,8 @@ watch(
 )
 ```
 
-{% stackblitz id="vitejs-vite-9aavre" /%}
+::Stackblitz{id="vitejs-vite-9aavre"}
+::
 
 ## 监听引用类型响应式值时新旧值相同的问题
 
@@ -64,5 +65,5 @@ watch(
   { deep: true }
 )
 ```
-
-{% stackblitz id="vitejs-vite-hs91du" /%}
+::Stackblitz{id="vitejs-vite-hs91du"}
+::
