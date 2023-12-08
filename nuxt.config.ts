@@ -11,6 +11,11 @@ export default async function () {
   })
 
   return defineNuxtConfig({
+    app: {
+      head: {
+        title: 'yuyinws',
+      },
+    },
     devtools: { enabled: true },
     extends: '@nuxt-themes/typography',
     modules: [

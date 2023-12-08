@@ -3,6 +3,7 @@ import type { QueryBuilderParams } from '@nuxt/content/dist/runtime/types'
 
 definePageMeta({
   name: 'articles-index',
+  title: 'articles',
 })
 
 const query: QueryBuilderParams = { path: '/articles', limit: 0, sort: [{ date: -1 }] }
