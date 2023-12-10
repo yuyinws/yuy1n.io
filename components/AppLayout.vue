@@ -22,6 +22,6 @@ useHead({
       <slot />
     </div>
 
-    <AppFooter />
+    <!-- <AppFooter /> -->
   </main>
 </template>
