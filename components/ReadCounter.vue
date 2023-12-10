@@ -18,6 +18,8 @@ watch(data, (val) => {
         clearInterval(timer)
     }, stepTime)
   }
+}, {
+  immediate: true,
 })
 </script>
 
