@@ -17,7 +17,7 @@ const query: QueryBuilderParams
 
 <template>
   <ContentList v-slot="{ list }" :query="query">
-    <section flex="~ col" gap-4>
+    <section flex="~ col" gap-4 class="slide-enter">
       <NuxtLink v-for="article in list" :key="article._path" class="op-60 hover:op-100 transition-all transition-duration-500" :to="article._path">
         <h2 text-xl font-bold>
           {{ article.title }}

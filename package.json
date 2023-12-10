@@ -13,6 +13,7 @@
   },
   "devDependencies": {
     "@antfu/eslint-config": "^2.3.4",
+    "@giscus/vue": "^2.3.0",
     "@iconify/json": "^2.2.153",
     "@nuxt-themes/typography": "^1.0.1",
     "@nuxt/content": "^2.9.0",

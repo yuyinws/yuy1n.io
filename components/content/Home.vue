@@ -29,49 +29,51 @@ const icons = [
 </script>
 
 <template>
-  <ProseH1 id="" class="!leading-none">
+  <h1 text-5xl font-800>
     Hi👋
-  </ProseH1>
-  <ProseH1 id="" class="!leading-none">
+    <br>
     I'm yuyin
-  </ProseH1>
-  <ProseCodeInline mr-2>
-    <ProseStrong>Front-end developer</ProseStrong>
-  </ProseCodeInline>
-  <ProseCodeInline>
-    <ProseStrong>
-      Open source enthusiasts
-    </ProseStrong>
-  </ProseCodeInline>
-  <ProseP>
-    Base on
-    <ProseA href="https://www.google.com/maps/place/Hangzhou,+Zhejiang,+China/">
-      Hangzhou China
-    </ProseA>
-  </ProseP>
-  <ProseP>
-    Enjoying make some interesting things with coding.
-  </ProseP>
+  </h1>
 
-  <ProseP>
-    You can reach me here:
-  </ProseP>
+  <div class="slide-enter mt-5">
+    <ProseCodeInline mr-2>
+      <ProseStrong>Frontend Developer</ProseStrong>
+    </ProseCodeInline>
+    <ProseCodeInline>
+      <ProseStrong>
+        Open Source Enthusiasts
+      </ProseStrong>
+    </ProseCodeInline>
+    <ProseP>
+      Base on
+      <ProseA href="https://www.google.com/maps/place/Hangzhou,+Zhejiang,+China/">
+        Hangzhou China
+      </ProseA>
+    </ProseP>
+    <ProseP>
+      Enjoying make some interesting things with coding.
+    </ProseP>
 
-  <div flex gap-2>
-    <NuxtLink
-      v-for="(icon, index) in icons" :key="index"
-      class="inline-flex text-sm items-center justify-center px-3 py-2 rounded-md gap-2 transition-colors decoration-none"
-      bg-gray-100
-      hover="text-#fff"
-      dark="bg-gray-50/10"
-      :class="icon.style"
-      :to="icon.path"
-      target="_blank"
-    >
-      <component
-        :is="icon.name"
-      />
-    </NuxtLink>
+    <ProseP>
+      You can reach me here:
+    </ProseP>
+
+    <div flex gap-2>
+      <NuxtLink
+        v-for="(icon, index) in icons" :key="index"
+        class="inline-flex text-sm items-center justify-center px-3 py-2 rounded-md gap-2 transition-colors decoration-none"
+        bg-gray-100
+        hover="text-#fff"
+        dark="bg-gray-50/10"
+        :class="icon.style"
+        :to="icon.path"
+        target="_blank"
+      >
+        <component
+          :is="icon.name"
+        />
+      </NuxtLink>
+    </div>
   </div>
 </template>
 

@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import Giscus from '@giscus/vue'
+
 const { page } = useContent()
 
 const router = useRouter()
@@ -30,13 +32,30 @@ function goTop() {
     </prose-p>
     <div flex items-center gap-2 cursor-pointer hover:text-gray-500 dark:hover:text-gray-300 @click="goBack">
       <i class="i-radix-icons:arrow-left" />
-      cd ~
+      Back
     </div>
-    <slot />
-    <div flex items-center gap-2 my-2 cursor-pointer hover:text-gray-500 dark:hover:text-gray-300 @click="goTop">
-      <i class="i-radix-icons:arrow-up" />
-      Top
+    <div class="slide-enter">
+      <slot />
     </div>
-    <PagePrevNext />
   </article>
+  <div flex items-center gap-2 mt-2 mb-5 cursor-pointer hover:text-gray-500 dark:hover:text-gray-300 @click="goTop">
+    <i class="i-radix-icons:arrow-up" />
+    Top
+  </div>
+
+  <PagePrevNext />
+
+  <Giscus
+    repo="yuyinws/yuy1n.io"
+    repo-id="R_kgDOJIyh5A"
+    category="Announcements"
+    category-id="DIC_kwDOJIyh5M4CV4Xq"
+    mapping="pathname"
+    strict="0"
+    reactions-enabled="1"
+    emit-metadata="0"
+    input-position="bottom"
+    theme="preferred_color_scheme"
+    lang="zh-CN"
+  />
 </template>

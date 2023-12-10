@@ -3,7 +3,7 @@ const { prev, next } = useContent()
 </script>
 
 <template>
-  <div flex justify-between>
+  <div flex justify-between mb-5>
     <NuxtLink v-if="prev" :to="prev._path">
       <div class="page-card">
         <div flex text-sm items-center gap-1>
@@ -31,6 +31,6 @@ const { prev, next } = useContent()
 
 <style scoped>
 .page-card {
-  --uno: w-80 break-all rounded-md bg-gray-50 hover:bg-gray-100 px-5 py-3 text-gray-800 dark:bg-gray-950 dark:text-gray-50 dark:hover:bg-gray-950/50;
+  --uno: w-80 break-all rounded-md bg-gray-50 hover:bg-gray-100 px-5 py-3 text-gray-800 dark:bg-#333 dark:text-gray-50 dark:hover:bg-#333/50;
 }
 </style>

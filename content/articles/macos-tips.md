@@ -9,6 +9,6 @@ date: 2023-04-19
 
 `sudo vim /etc/pam.d/sudo`
 
-增加一行
-
-`auth sufficient pam_tid.so`
+```diff [/etc/pam.d/sudo]
++ auth sufficient pam_tid.so
+```

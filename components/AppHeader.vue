@@ -19,6 +19,13 @@ const icons = [
     style: 'hover:text-blue-500',
     active: 'text-blue-500',
   },
+  {
+    activePage: ['Projects'],
+    path: '/projects',
+    name: Light,
+    style: 'hover:text-yellow-500',
+    active: 'text-yellow-500',
+  },
 ]
 
 const { page } = useContent()
