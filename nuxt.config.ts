@@ -1,4 +1,4 @@
-import { promises as fs } from 'node:fs'
+import { promises as fs, readFileSync } from 'node:fs'
 import fg from 'fast-glob'
 
 export default async function () {
@@ -35,11 +35,12 @@ export default async function () {
       ],
     ],
     css: [
-      '@unocss/reset/tailwind.css',
+      'assets/style/main.css',
     ],
     content: {
       documentDriven: true,
       highlight: {
+        preload: ['ini'],
         theme: {
           // Default theme (same as single string)
           default: 'vitesse-light',

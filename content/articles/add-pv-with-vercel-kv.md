@@ -26,7 +26,7 @@ layout: article
 
 由于后续会用到Astro的**服务器渲染（SSR**与**API端点**，因此需要在`astro.config.mjs`文件中进行如下配置：
 
-```js
+```js[astro.config.mjs]
 import { defineConfig } from 'astro/config'
 import netlify from '@astrojs/netlify/functions'
 
@@ -50,7 +50,7 @@ Vercel官方发布的npm包[@vercel/kv](https://vercel.com/docs/storage/vercel-k
 
 在`src/pages/api`文件夹下新建一个`setPV.ts`文件，具体代码如下：
 
-```ts
+```ts [setPV.ts]
 import type { APIRoute } from 'astro'
 import { createClient } from '@vercel/kv'
 

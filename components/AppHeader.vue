@@ -10,14 +10,14 @@ const icons = [
     path: '/',
     name: Logo,
     style: 'hover:text-black',
-    active: 'text-black cursor-not-allowed',
+    active: 'text-black',
   },
   {
     activePage: ['articles', 'articles-index'],
     path: '/articles',
     name: Article,
     style: 'hover:text-blue-500',
-    active: 'text-blue-500 cursor-not-allowed',
+    active: 'text-blue-500',
   },
 ]
 

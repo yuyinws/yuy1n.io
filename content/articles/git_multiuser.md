@@ -17,9 +17,7 @@ date: 2022-08-28
 
 ### 根据文件夹区分用户
 
-**.gitconfig**
-
-```
+```ini [.gitconfig]
 [includeIf "gitdir:~/github/"]
        path = .gitconfig-github
 [includeIf "gitdir:~/gitlab/"]
@@ -32,9 +30,7 @@ date: 2022-08-28
 
 ### 根据远程地址区分用户
 
-**.gitconfig**
-
-```
+```ini [.gitconfig]
 [includeIf "hasconfig:remote.*.url:https://github.com/**"]
        path = .gitconfig-github
 [includeIf "hasconfig:remote.*.url:https://gitlab.com/**"]

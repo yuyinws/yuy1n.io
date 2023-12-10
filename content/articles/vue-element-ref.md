@@ -1,7 +1,7 @@
 ---
 pageName: articles
 layout: article
-title: 如何Vue3中给元素绑定ref
+title: 如何在Vue3中给元素绑定ref
 date: 2022-02-23
 ---
 
@@ -55,9 +55,11 @@ const setItemRef = (el) => {
 
 在`ref`绑定到`reactive`中
 ```vue
-<input :ref="(el) => (inputRefs['input1Ref'] = el)" />
+<template>
+  <input :ref="(el) => (inputRefs['input1Ref'] = el)" />
 
-<input :ref="(el) => (inputRefs.input2Ref = el)" />
+  <input :ref="(el) => (inputRefs.input2Ref = el)" />
+</template>
 
 <script setup>
 const inputRefs = reactive({

@@ -17,12 +17,12 @@ const icons = [
   },
   {
     name: MdiSteam,
-    path: 'https://twitter.com/yuyinws',
+    path: 'https://steamcommunity.com/id/yuyinws/',
     style: 'cursor-pointer hover:bg-#24292E',
   },
   {
     name: Bili,
-    path: 'https://twitter.com/yuyinws',
+    path: 'https://space.bilibili.com/60406077',
     style: 'cursor-pointer hover:bg-#ea7a99',
   },
 ]
@@ -46,7 +46,3 @@ const icons = [
     </NuxtLink>
   </div>
 </template>
-
-<style>
-
-</style>

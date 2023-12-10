@@ -7,9 +7,10 @@ const src = computed(() => `https://stackblitz.com/edit/${props.id}?embed=1&file
 </script>
 
 <template>
-  <iframe
-    width="100%"
-    height="500px"
-    :src="src"
-  />
+  <div h-100 w-full>
+    <iframe
+      :src="src"
+      h-100 w-full
+    />
+  </div>
 </template>

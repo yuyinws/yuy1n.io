@@ -23,13 +23,13 @@ description: 前端项目增加Husky ESLint Prettier Commitizen
 
 ### 安装依赖
 
-```
+```shell
 pnpm add -D prettier
 ```
 
 ### script
 
-```json
+```json [package.json]
 {
   "script": {
     "format:code": "prettier --write \"src/**/*.(vue|js|ts|css|scss)\""
@@ -39,8 +39,7 @@ pnpm add -D prettier
 
 ### 配置文件
 
-```js
-// .prettierrc.js
+```js [.prettierrc.js]
 module.exports = {
   printWidth: 80, // 换行字符串阈值
   tabWidth: 2, // 设置工具每一个水平缩进的空格数
@@ -62,7 +61,7 @@ module.exports = {
 
 ### 安装依赖
 
-```
+```shell
 pnpm add -D eslint @antfu/eslint-config
 ```
 
@@ -76,8 +75,7 @@ pnpm add -D eslint @antfu/eslint-config
 
 
 
-```js
-// .eslintignore
+```js [.eslintignore]
 # eslint 忽略检查 (根据项目需要自行添加)
 node_modules
 dist
@@ -89,13 +87,13 @@ dist
 
 ### 依赖
 
-```
+```shell
 pnpm add -D commitizen
 ```
 
 ### script
 
-```json
+```json [package.json]
 {
   "script": {
     "cm": "git-cz"
@@ -105,14 +103,14 @@ pnpm add -D commitizen
 
 ### 配置
 
-在`package.json`中增加以下配置
-
-```
+```json [package.json]
+{
   "config": {
     "commitizen": {
       "path": "@commitlint/cz-commitlint"
     }
   }
+}
 ```
 
 
@@ -121,13 +119,13 @@ pnpm add -D commitizen
 
 ### 依赖
 
-```
+```shell
 pnpm add -D husky
 ```
 
 ### script
 
-```json
+```json [package.json]
 {
   "script": {
     "prepare": "husky install"
@@ -180,14 +178,13 @@ npx lint-staged --allow-empty $1
 
 ### 依赖
 
-```
+```sh
 pnpm add -D @commitlint/cli @commitlint/config-conventional @commitlint/cz-commitlint
 ```
 
 ### 配置
 
-```js
-// commitlint.config.js
+```js [commitlint.config.js]
 module.exports = {
   extends: ['@commitlint/config-conventional']
 }
@@ -199,15 +196,13 @@ module.exports = {
 
 ### 依赖
 
-```
+```sh
 npm add -D lint-staged
 ```
 
 ### 配置
 
-在`package.json`中添加以下配置：
-
-```json
+```json [package.json]
  "lint-staged": {
     "src/**/*.{js,ts,jsx,tsx}": [
       "prettier --config .prettierrc.js --write",
@@ -225,8 +220,6 @@ npm add -D lint-staged
     ]
   },
 ```
-
-
 
 ## 最终效果
 

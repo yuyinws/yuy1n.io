@@ -1,0 +1,32 @@
+html,
+body,
+#__nuxt {
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+html.dark {
+  background: #222;
+  color: white;
+
+}
+
+:root {
+  --kbd-bg-color: rgb(243 244 246);
+  --kbd-border-color: rgb(229 231 235);
+}
+
+:root.dark {
+  --kbd-bg-color: rgb(75 85 99);
+  --kbd-border-color: rgb(107 114 128);
+
+}
+
+kbd {
+  --uno: px-2 py-1 text-sm;
+  background-color: var(--kbd-bg-color);
+  border-width: 1px;
+  border-color: var(--kbd-border-color);
+  border-radius: 0.5rem;
+}
