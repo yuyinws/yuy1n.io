@@ -54,6 +54,7 @@ export default defineNuxtConfig({
   routeRules: {
     '/articles/**': { prerender: true },
     '/': { prerender: true },
+    '/articles': { prerender: true },
   },
   nitro: {
     prerender: {
