@@ -3,7 +3,7 @@ const { prev, next } = useContent()
 </script>
 
 <template>
-  <div flex justify-between mb-5>
+  <div flex="~ wrap" justify-between mb-5 gap-y-3>
     <NuxtLink v-if="prev" :to="prev._path">
       <div class="page-card">
         <div flex text-sm items-center gap-1>
