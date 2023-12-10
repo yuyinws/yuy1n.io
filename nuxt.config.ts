@@ -38,6 +38,7 @@ export default async function () {
       '@unocss/reset/tailwind.css',
     ],
     content: {
+      documentDriven: true,
       highlight: {
         theme: {
           // Default theme (same as single string)
@@ -52,11 +53,6 @@ export default async function () {
     devServer: {
       host: '0.0.0.0',
       port: 3000,
-    },
-    nitro: {
-      prerender: {
-        routes: ['/', '/articles', '/projects'],
-      },
     },
     colorMode: {
       classSuffix: '',

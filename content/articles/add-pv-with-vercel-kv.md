@@ -1,7 +1,7 @@
 ---
-external: false
 title: 使用 Vercel Storage 给Astro站点添加浏览量统计功能
 date: 2023-05-23
+pageName: articles
 ---
 
 ## Vercel Storage
@@ -26,11 +26,11 @@ date: 2023-05-23
 由于后续会用到Astro的**服务器渲染（SSR**与**API端点**，因此需要在`astro.config.mjs`文件中进行如下配置：
 
 ```js
-import { defineConfig } from "astro/config";
-import netlify from '@astrojs/netlify/functions';
+import { defineConfig } from 'astro/config'
+import netlify from '@astrojs/netlify/functions'
 
 export default defineConfig({
-    output: "server",
+  output: 'server',
   	adapter: netlify(),
 })
 ```
@@ -58,9 +58,9 @@ const KV_REST_API_TOKEN = import.meta.env.KV_REST_API_TOKEN
 
 export const get: APIRoute = async (ctx) => {
   try {
-    if (!KV_REST_API_URL || !KV_REST_API_TOKEN) {
+    if (!KV_REST_API_URL || !KV_REST_API_TOKEN)
       throw new Error('missing env')
-    }
+
     const v = ctx.url.searchParams.get('v') || '404'
     const client = createClient({
       url: KV_REST_API_URL,
@@ -74,8 +74,8 @@ export const get: APIRoute = async (ctx) => {
         message: number
       })
     }
-
-  } catch (error) {
+  }
+  catch (error) {
     return {
       body: JSON.stringify({
         state: 'fail',
@@ -83,8 +83,7 @@ export const get: APIRoute = async (ctx) => {
       })
     }
   }
-};
-
+}
 ```
 
 ### 客户端代码

@@ -20,6 +20,8 @@ const icons = [
     active: 'text-blue-500 cursor-not-allowed',
   },
 ]
+
+const { page } = useContent()
 </script>
 
 <template>
@@ -30,7 +32,7 @@ const icons = [
       >
         <component
           :is="icon.name"
-          :class="[icon.style, icon.activePage.includes($route.name as string) ? icon.active : 'text-gray-400']" cursor-pointer w-5 h-5
+          :class="[icon.style, icon.activePage.includes(page?.pageName as string) ? icon.active : 'text-gray-400']" cursor-pointer w-5 h-5
         />
       </NuxtLink>
     </div>
