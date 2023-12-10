@@ -58,5 +58,10 @@ export default async function () {
     colorMode: {
       classSuffix: '',
     },
+    nitro: {
+      prerender: {
+        routes: ['/sitemap.xml'],
+      },
+    },
   })
 }
