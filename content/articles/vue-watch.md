@@ -1,5 +1,6 @@
 ---
-external: false
+pageName: articles
+layout: article
 title: Vue Watch使用相关问题记录
 date: 2023-07-15
 ---

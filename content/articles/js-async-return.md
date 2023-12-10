@@ -1,5 +1,6 @@
 ---
-external: false
+pageName: articles
+layout: article
 title: JavaScript函数return前包含异步代码的问题
 date: 2023-05-17
 ---
@@ -12,15 +13,15 @@ function changeFoo() {
       resolve({
         bar: 'bar'
       })
-    },2000)
+    }, 2000)
   })
 }
 
 function main() {
   let foo = 'foo'
-  
+
   function otherFn() {
-    changeFoo().then(res => {
+    changeFoo().then((res) => {
       foo = res.bar
     })
   }
@@ -33,8 +34,6 @@ function main() {
 }
 
 console.log(main())
-
-
 ```
 在`main`函数中，会在`otherFn`中调用一个`changeFoo`异步函数并将`foo`的值修改为异步函数的返回结果，然而我们在打印`main()`的时候会发现打印出的始终是原始值`{foo: 'foo'}`而不是`{foo: 'bar'}`.
 
@@ -46,7 +45,7 @@ function changeFoo() {
       resolve({
         bar: 'bar'
       })
-    },2000)
+    }, 2000)
   })
 }
 
@@ -55,7 +54,7 @@ async function main() {
   const asyncFns = []
 
   function otherFn() {
-    const asyncFn = changeFoo().then(res => {
+    const asyncFn = changeFoo().then((res) => {
       foo = res.bar
     })
 
@@ -70,7 +69,7 @@ async function main() {
     foo
   }
 }
-main().then(res => {
+main().then((res) => {
   console.log(res)
 })
 ```

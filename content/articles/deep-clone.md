@@ -1,5 +1,6 @@
 ---
-external: false
+pageName: articles
+layout: article
 title: Javascript中的深拷贝与浅拷贝
 date: 2021-03-12
 ---
@@ -7,23 +8,23 @@ date: 2021-03-12
 ## 两段代码
 先来看2段代码
 ``` js
-let a = "小红";
-let b = a;
-b = "小明";
-console.log(a);
+const a = '小红'
+let b = a
+b = '小明'
+console.log(a)
 ```
 会打印出什么？很明显会输出小红，因为改变的是变量b的值，变量的a的值没有发生改变。
 
 再来看一段代码
 ``` js
-let a = {
+const a = {
   name: '小红',
   age: 22,
-};
+}
 
-let b = a;
-b.name = '小明';
-console.log(a.name);
+const b = a
+b.name = '小明'
+console.log(a.name)
 ```
 如果按照第一段代码的逻辑，这里应该也会输出小红，因为改变的是b.name的值，a.name的值并没有发生改变，但实际上会输出 **小明**。
 
@@ -64,41 +65,41 @@ console.log(a.name);
 ### 深拷贝的实现方式
 如果对象或数组只有一层，可以用ES6拓展运算符实现深拷贝。
 ``` js
-let a = {
-    name:"小红",
-    age:23
+const a = {
+  name: '小红',
+  age: 23
 }
 
-let b = {...a}
-b.name="小明";
-console.log(a.name) //输入小红，深拷贝成功
+const b = { ...a }
+b.name = '小明'
+console.log(a.name) // 输入小红，深拷贝成功
 ```
 
 如果对象或数组包含多层，可以通过以下方法实现深拷贝
 ``` js
 function deepClone(obj) {
-  let objClone = Array.isArray(obj) ? [] : {};
+  const objClone = Array.isArray(obj) ? [] : {}
   if (obj && typeof obj === 'object') {
-    for (let key in obj) {
-      if (obj[key] && typeof obj[key] === 'object') {
-        objClone[key] = deepClone(obj[key]);
-      } else {
-        objClone[key] = obj[key];
-      }
+    for (const key in obj) {
+      if (obj[key] && typeof obj[key] === 'object')
+        objClone[key] = deepClone(obj[key])
+
+      else
+        objClone[key] = obj[key]
     }
   }
-  return objClone;
+  return objClone
 }
 
-let a = {
+const a = {
   stu: {
     name: '小红',
     age: 23,
   },
-};
+}
 
-let b = deepClone(a);
-b.stu.name = "小明";
-console.log(a.stu.name) //输出小红
+const b = deepClone(a)
+b.stu.name = '小明'
+console.log(a.stu.name) // 输出小红
 ```
 

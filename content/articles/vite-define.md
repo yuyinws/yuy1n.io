@@ -1,5 +1,6 @@
 ---
-external: false
+pageName: articles
+layout: article
 title: Vite打包时注入时间字符串到Vue模板中
 date: 2022-03-29
 ---

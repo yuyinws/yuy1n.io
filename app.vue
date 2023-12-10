@@ -1,20 +1,7 @@
-<script setup lang="ts">
-const route = useRoute()
-
-useHead({
-  title: () => (route.meta.title as string) || '',
-  titleTemplate: title => (title ? `${title} - yuyin` : 'yuyinws'),
-  bodyAttrs: {
-    class: 'font-sans',
-  },
-})
-</script>
-
 <template>
-  <div class="max-w-3xl mx-auto min-h-screen px-6 sm:px-8 pb-10 pt-5">
-    <Header />
+  <AppLayout>
     <NuxtPage />
-  </div>
+  </AppLayout>
 </template>
 
 <style>

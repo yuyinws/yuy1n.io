@@ -1,5 +1,6 @@
 ---
-external: false
+pageName: articles
+layout: article
 title: Vue组件事件存在默认参数问题
 date: 2022-03-31
 ---

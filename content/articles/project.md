@@ -1,5 +1,6 @@
 ---
-external: false
+pageName: articles
+layout: article
 title: 前端项目规范化改造
 date: 2022-04-29
 description: 前端项目增加Husky ESLint Prettier Commitizen
@@ -30,9 +31,9 @@ pnpm add -D prettier
 
 ```json
 {
-    "script":{
-        "format:code": "prettier --write \"src/**/*.(vue|js|ts|css|scss)\""
-    }
+  "script": {
+    "format:code": "prettier --write \"src/**/*.(vue|js|ts|css|scss)\""
+  }
 }
 ```
 
@@ -52,8 +53,7 @@ module.exports = {
   arrowParens: 'always', // (x) => {} 是否要有小括号
   requirePragma: false, // 不需要写文件开头的 @prettier
   insertPragma: false // 不需要自动在文件开头插入 @prettier
-};
-
+}
 ```
 
 ## ESLint
@@ -97,9 +97,9 @@ pnpm add -D commitizen
 
 ```json
 {
-    "script":{
-        "cm": "git-cz",
-    }
+  "script": {
+    "cm": "git-cz"
+  }
 }
 ```
 
@@ -129,9 +129,9 @@ pnpm add -D husky
 
 ```json
 {
-    "script":{
-        "prepare": "husky install",
-    }
+  "script": {
+    "prepare": "husky install"
+  }
 }
 ```
 

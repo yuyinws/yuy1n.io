@@ -1,5 +1,6 @@
 ---
-external: false
+pageName: articles
+layout: article
 title: 如何使用Cloudflare Workers
 date: 2023-04-16
 ---

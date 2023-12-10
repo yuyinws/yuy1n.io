@@ -1,5 +1,6 @@
 ---
-external: false
+pageName: articles
+layout: article
 title: git常用操作总结
 date: 2021-06-17
 ---

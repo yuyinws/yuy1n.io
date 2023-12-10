@@ -1,5 +1,6 @@
 ---
-external: false
+pageName: articles
+layout: article
 title: MacOS使用小技巧
 date: 2023-04-19
 ---

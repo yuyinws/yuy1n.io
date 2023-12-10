@@ -17,12 +17,12 @@ const query: QueryBuilderParams
 
 <template>
   <ContentList v-slot="{ list }" :query="query">
-    <section flex="~ col" gap-4 mt-5>
-      <NuxtLink v-for="article in list" :key="article._path" :to="article._path">
-        <h2 text-xl font-bold class="hover:text-slate-900/50 dark:hover:text-zinc-400">
+    <section flex="~ col" gap-4>
+      <NuxtLink v-for="article in list" :key="article._path" class="op-60 hover:op-100 transition-all transition-duration-500" :to="article._path">
+        <h2 text-xl font-bold>
           {{ article.title }}
         </h2>
-        <NuxtTime class="text-gray-500 dark:text-gray-100" :datetime="article.date" year="numeric" month="narrow" day="numeric" />
+        <NuxtTime :datetime="article.date" year="numeric" month="narrow" day="numeric" />
       </NuxtLink>
     </section>
   </ContentList>
