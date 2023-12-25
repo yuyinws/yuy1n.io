@@ -11,6 +11,9 @@ const query: QueryBuilderParams
     date: {
       $exists: true,
     },
+    draft: {
+      $ne: true && import.meta.env.MODE !== 'development',
+    },
   },
 }
 </script>

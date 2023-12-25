@@ -6,15 +6,18 @@ export default defineNuxtConfig({
       title: 'yuyinws',
     },
   },
+  site: {
+    url: 'http://192.168.0.22:3000/',
+  },
   devtools: { enabled: true },
   extends: '@nuxt-themes/typography',
   modules: [
     '@nuxt/content',
-    'unplugin-turbo-console/nuxt',
     '@unocss/nuxt',
     '@nuxtjs/color-mode',
     '@vueuse/nuxt',
     'nuxt-time',
+    'nuxt-og-image',
     [
       'unplugin-icons/nuxt',
       {

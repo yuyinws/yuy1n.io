@@ -160,3 +160,11 @@ kbd {
 .dark::view-transition-new(root) {
   z-index: 1;
 }
+
+.dark [img-light] {
+  display: none;
+}
+
+html:not(.dark) [img-dark] {
+  display: none;
+}
