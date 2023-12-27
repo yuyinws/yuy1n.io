@@ -9,6 +9,8 @@ date: 2023-04-19
 
 `sudo vim /etc/pam.d/sudo`
 
+在第1行加入：
+
 ```diff [/etc/pam.d/sudo]
 + auth sufficient pam_tid.so
 ```
