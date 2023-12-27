@@ -2,7 +2,6 @@
 import Logo from '~icons/custom/logo'
 import Light from '~icons/ri/lightbulb-line'
 import Article from '~icons/ri/article-line'
-import RSS from '~icons/ri/rss-line'
 
 const icons = [
   {

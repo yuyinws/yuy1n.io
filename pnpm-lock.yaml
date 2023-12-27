@@ -34,6 +34,9 @@ devDependencies:
   '@vercel/kv':
     specifier: ^1.0.1
     version: 1.0.1
+  case-police:
+    specifier: ^0.6.1
+    version: 0.6.1
   eslint:
     specifier: ^8.55.0
     version: 8.55.0
@@ -4043,6 +4046,11 @@ packages:
       no-case: 3.0.4
       tslib: 2.6.2
       upper-case-first: 2.0.2
+    dev: true
+
+  /case-police@0.6.1:
+    resolution: {integrity: sha512-tOgkG3HhtzNVHU+HVHqbpVJ3CICPDihtlgoM2C4dx0RLeo6qcNVeBgiYJN5Bln+stxKrnKrw89CFgqYQDqwZQg==}
+    hasBin: true
     dev: true
 
   /ccount@2.0.1:
