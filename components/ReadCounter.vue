@@ -1,5 +1,11 @@
 <script setup lang="ts">
-const { data } = await useAsyncData('counter', () => $fetch('/pv?v=1'))
+const route = useRoute()
+const config = useRuntimeConfig()
+
+console.log(config)
+
+const v = config.public.domain + route.path
+const { data } = await useAsyncData('counter', () => $fetch(`/pv?v=${v}`))
 
 const counter = ref(0)
 

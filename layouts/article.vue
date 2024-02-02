@@ -3,23 +3,23 @@ import Giscus from '@giscus/vue'
 
 const { page } = useContent()
 
-const router = useRouter()
-function goBack() {
-  router.replace({
-    path: '/articles',
-  })
-}
+// const router = useRouter()
+// function goBack() {
+//   router.replace({
+//     path: '/articles',
+//   })
+// }
 
 const articleRef = ref()
 
-function goTop() {
-  articleRef.value?.scrollIntoView(
-    {
-      behavior: 'smooth',
-      block: 'start',
-    },
-  )
-}
+// function goTop() {
+//   articleRef.value?.scrollIntoView(
+//     {
+//       behavior: 'smooth',
+//       block: 'start',
+//     },
+//   )
+// }
 </script>
 
 <template>

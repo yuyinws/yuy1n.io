@@ -7,7 +7,12 @@ export default defineNuxtConfig({
     },
   },
   site: {
-    url: 'http://192.168.0.22:3000/',
+    url: 'https://yuy1n.io',
+  },
+  runtimeConfig: {
+    public: {
+      domain: 'https://yuy1n.io',
+    },
   },
   devtools: {
     enabled: true,
@@ -24,6 +29,7 @@ export default defineNuxtConfig({
     '@vueuse/nuxt',
     'nuxt-time',
     'nuxt-og-image',
+    'unplugin-turbo-console/nuxt',
     [
       'unplugin-icons/nuxt',
       {
