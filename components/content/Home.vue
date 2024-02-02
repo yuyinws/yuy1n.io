@@ -30,7 +30,9 @@ const icons = [
 
 <template>
   <h1 text-5xl font-800>
-    Hi👋
+    Hi <span class="unWobble-animation">
+      👋
+    </span>
     <br>
     I'm yuyin
   </h1>
@@ -62,21 +64,47 @@ const icons = [
       <NuxtLink
         v-for="(icon, index) in icons" :key="index"
         class="inline-flex text-sm items-center justify-center px-3 py-2 rounded-md gap-2 transition-colors decoration-none"
-        bg-gray-100
-        hover="text-#fff"
-        dark="bg-gray-50/10"
-        :class="icon.style"
-        :to="icon.path"
-        target="_blank"
+        bg-gray-100 hover="text-#fff" dark="bg-gray-50/10" :class="icon.style" :to="icon.path" target="_blank"
       >
-        <component
-          :is="icon.name"
-        />
+        <component :is="icon.name" />
       </NuxtLink>
     </div>
   </div>
 </template>
 
 <style>
+@keyframes unWobble {
+  0% {
+    transform: translateZ(0)
+  }
 
+  15% {
+    transform: translate3d(-25%, 0, 0) rotate(-5deg)
+  }
+
+  30% {
+    transform: translate3d(20%, 0, 0) rotate(3deg)
+  }
+
+  45% {
+    transform: translate3d(-15%, 0, 0) rotate(-3deg)
+  }
+
+  60% {
+    transform: translate3d(10%, 0, 0) rotate(2deg)
+  }
+
+  75% {
+    transform: translate3d(-5%, 0, 0) rotate(-1deg)
+  }
+
+  to {
+    transform: translateZ(0)
+  }
+}
+
+.unWobble-animation {
+  animation: unWobble 1s linear infinite;
+  display: inline-block;
+}
 </style>

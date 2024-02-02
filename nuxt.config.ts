@@ -9,7 +9,13 @@ export default defineNuxtConfig({
   site: {
     url: 'http://192.168.0.22:3000/',
   },
-  devtools: { enabled: true },
+  devtools: {
+    enabled: true,
+
+    timeline: {
+      enabled: true,
+    },
+  },
   extends: '@nuxt-themes/typography',
   modules: [
     '@nuxt/content',

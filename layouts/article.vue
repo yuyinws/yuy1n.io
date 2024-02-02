@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import Giscus from '@giscus/vue'
 
-const { page, toc } = useContent()
+const { page } = useContent()
 
 const router = useRouter()
 function goBack() {
@@ -46,29 +46,6 @@ function goTop() {
     <i class="i-radix-icons:arrow-up" />
     Top
   </div>
-
-  <TOC :data="toc" />
-  <!-- <nav>
-    <ul>
-      <li v-for="link of navigation" :key="link._path">
-        <NuxtLink :to="link._path">
-          {{ link.title }}
-        </NuxtLink>
-      </li>
-    </ul>
-  </nav> -->
-
-  <!-- <nav>
-    <ContentNavigation v-slot="{ navigation }">
-      <ul>
-        <li v-for="link of navigation" :key="link._path">
-          <NuxtLink :to="link._path">
-            {{ link.title }}
-          </NuxtLink>
-        </li>
-      </ul>
-    </ContentNavigation>
-  </nav> -->
 
   <PagePrevNext />
 
