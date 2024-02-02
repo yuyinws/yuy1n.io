@@ -10,7 +10,7 @@ const { prev, next } = useContent()
           <i class="i-radix-icons:double-arrow-left" />
           Prev
         </div>
-        <span line-clamp-1>
+        <span line-clamp-1 text-sm font-medium>
           {{ prev?.title }}
         </span>
       </div>
@@ -21,7 +21,7 @@ const { prev, next } = useContent()
           Next
           <i class="i-radix-icons:double-arrow-right" />
         </div>
-        <span line-clamp-1>
+        <span line-clamp-1 text-sm text-right font-medium>
           {{ next?.title }}
         </span>
       </div>

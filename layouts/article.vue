@@ -34,18 +34,18 @@ function goTop() {
         <ReadCounter />
       </ClientOnly>
     </ProseP>
-    <div flex items-center gap-2 cursor-pointer hover:text-gray-500 dark:hover:text-gray-300 @click="goBack">
+    <!-- <div op-50 cursor-pointer hover:op-100  @click="goBack">
       <i class="i-radix-icons:arrow-left" />
-      Back
-    </div>
+      > cd ..
+    </div> -->
     <div class="slide-enter">
       <slot />
     </div>
   </article>
-  <div flex items-center gap-2 mt-2 mb-5 cursor-pointer hover:text-gray-500 dark:hover:text-gray-300 @click="goTop">
+  <!-- <div flex items-center gap-2 mt-2 mb-5 cursor-pointer hover:text-gray-500 dark:hover:text-gray-300 @click="goTop">
     <i class="i-radix-icons:arrow-up" />
     Top
-  </div>
+  </div> -->
 
   <PagePrevNext />
 
