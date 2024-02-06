@@ -3,6 +3,8 @@ pageName: articles
 layout: article
 title: Enable Vue devtools in Production
 date: 2023-03-25
+ogImage:
+  component: NuxtSeo
 ---
 
 1. Press <kbd>F12</kbd> to open devtool console page.

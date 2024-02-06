@@ -9,6 +9,16 @@ export default defineNuxtConfig({
   site: {
     url: 'https://yuy1n.io',
   },
+  ogImage: {
+    googleFontMirror: true,
+    fonts: [
+      {
+        name: 'noto',
+        weight: '600',
+        path: '/fonts/NotoSans.ttf',
+      },
+    ],
+  },
   runtimeConfig: {
     public: {
       domain: 'https://yuy1n.io',
@@ -28,8 +38,7 @@ export default defineNuxtConfig({
     '@nuxtjs/color-mode',
     '@vueuse/nuxt',
     'nuxt-time',
-    'nuxt-og-image',
-    'unplugin-turbo-console/nuxt',
+    '@nuxtjs/seo',
     [
       'unplugin-icons/nuxt',
       {

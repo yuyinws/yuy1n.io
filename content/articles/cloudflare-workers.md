@@ -3,6 +3,8 @@ pageName: articles
 layout: article
 title: 如何使用Cloudflare Workers
 date: 2023-04-16
+ogImage:
+  component: NuxtSeo
 ---
 
 ## 什么是Cloudflare Workers

@@ -3,6 +3,8 @@ pageName: articles
 layout: article
 title: Git多用户管理
 date: 2022-08-28
+ogImage:
+  component: NuxtSeo
 ---
 
 ## 使用场景

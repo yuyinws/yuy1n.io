@@ -3,6 +3,8 @@ pageName: articles
 layout: article
 title: Javascript中的深拷贝与浅拷贝
 date: 2021-03-12
+ogImage:
+  component: NuxtSeo
 ---
 
 ## 两段代码

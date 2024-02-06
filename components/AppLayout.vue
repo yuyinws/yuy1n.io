@@ -1,8 +1,6 @@
 <script setup lang="ts">
 const route = useRoute()
 
-const { toc, page } = useContent()
-
 useHead({
   title: () => (route.meta.title as string) || '',
   titleTemplate: title => (title ? `${title} - yuyin` : 'yuyinws'),
@@ -18,7 +16,6 @@ useHead({
 
 <template>
   <main>
-    <TOC v-if="page.toc" :data="toc" />
     <div class="max-w-3xl mx-auto min-h-screen px-6 sm:px-8 pb-10 pt-5">
       <AppLoadingBar />
       <AppHeader />

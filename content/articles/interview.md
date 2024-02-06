@@ -5,6 +5,8 @@ title: 面试题汇总
 date: 2024-01-01
 draft: true
 toc: true
+ogImage:
+  component: NuxtSeo
 ---
 
 ## 原型与原型链

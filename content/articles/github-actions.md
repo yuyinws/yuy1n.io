@@ -3,6 +3,8 @@ pageName: articles
 layout: article
 title: github actions配置备份
 date: 2022-01-20
+ogImage:
+  component: NuxtSeo
 ---
 
 ## NodeJS

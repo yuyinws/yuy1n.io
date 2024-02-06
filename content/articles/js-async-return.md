@@ -3,6 +3,8 @@ pageName: articles
 layout: article
 title: JavaScript函数return前包含异步代码的问题
 date: 2023-05-17
+ogImage:
+  component: NuxtSeo
 ---
 
 假设有下面这一段代码:

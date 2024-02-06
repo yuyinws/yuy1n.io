@@ -3,6 +3,8 @@ title: 使用 Vercel Storage 给Astro站点添加浏览量统计功能
 date: 2023-05-23
 pageName: articles
 layout: article
+ogImage:
+  component: NuxtSeo
 ---
 
 ## Vercel Storage

@@ -3,6 +3,8 @@ pageName: articles
 layout: article
 title: MacOS使用小技巧
 date: 2023-04-19
+ogImage:
+  component: NuxtSeo
 ---
 
 ## sudo操作启用指纹验证

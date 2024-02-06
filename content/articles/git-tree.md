@@ -3,6 +3,8 @@ pageName: articles
 layout: article
 title: 一种以树状结构管理本地 git 仓库的思路
 date: 2024-02-02
+ogImage:
+  component: NuxtSeo
 ---
 
 > 本文的内容高度受到[这篇文章](https://hirok.io/posts/github-tree-structure)的启发
