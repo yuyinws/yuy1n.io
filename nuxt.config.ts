@@ -83,10 +83,5 @@ export default defineNuxtConfig({
     '/__og-image__/**': {
       prerender: true,
     },
-  },
-  nitro: {
-    prerender: {
-      crawlLinks: true,
-    },
-  },
+  }
 })
