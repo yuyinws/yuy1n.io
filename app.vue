@@ -1,8 +1,6 @@
 <template>
   <AppLayout>
     <NuxtPage />
-  </AppLayout>
-  <client-only>
     <Circle />
-  </client-only>
+  </AppLayout>
 </template>

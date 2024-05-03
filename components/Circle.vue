@@ -1,20 +1,18 @@
 <script setup lang="ts">
 const { page } = useContent()
 
-const top = ref(0)
-const left = ref(0)
+const top = computed(() => {
+  return page.value?.circle?.top || 0
+})
 
-watch(page, (val) => {
-  top.value = val?.circle.top
-  left.value = val?.circle.left
-}, {
-  deep: true,
-  immediate: true,
+const left = computed(() => {
+  return page.value?.circle?.left || 0
 })
 </script>
 
 <template>
   <span
+    v-show="page?.circle"
     absolute pointer-events-none rounded-full z--1
     bg-gradient-to-r from-green via-hex-00DC82 to-teal-500
     op60 dark:op50
