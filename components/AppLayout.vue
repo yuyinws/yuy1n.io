@@ -15,11 +15,9 @@ useHead({
 </script>
 
 <template>
-  <main py-5>
-    <div px-5>
-      <AppHeader />
-    </div>
-    <div class="max-w-3xl mx-auto min-h-screen px-6 sm:px-8">
+  <main px-6 xl:px-4 pt-4 min-h-screen>
+    <AppHeader />
+    <div class="max-w-3xl mx-auto">
       <AppLoadingBar />
       <slot />
     </div>

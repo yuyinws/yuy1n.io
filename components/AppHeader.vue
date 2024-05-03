@@ -1,49 +1,33 @@
 <script lang="ts" setup>
 import Logo from '~icons/custom/logo'
-import Light from '~icons/ri/lightbulb-line'
-import Article from '~icons/ri/article-line'
-
-const icons = [
-  {
-    activePage: ['Home'],
-    path: '/',
-    name: Logo,
-    style: 'hover:text-black',
-    active: 'text-black',
-  },
-  {
-    activePage: ['articles', 'articles-index'],
-    path: '/articles',
-    name: Article,
-    style: 'hover:text-blue-500',
-    active: 'text-blue-500',
-  },
-  {
-    activePage: ['Projects'],
-    path: '/projects',
-    name: Light,
-    style: 'hover:text-yellow-500',
-    active: 'text-yellow-500',
-  },
-]
-
-const { page } = useContent()
 </script>
 
 <template>
-  <header flex justify-between>
-    <div flex gap-3>
+  <header flex justify-between items-center mb-5>
+    <NuxtLink to="/">
+      <Logo w-8 h-8 dark:text-white cursor-pointer />
+    </NuxtLink>
+
+    <div flex items-center gap-5>
       <NuxtLink
-        v-for="icon in icons" :key="icon.path" :to="icon.path"
+        transition-all transition-duration-500
+        op-50 cursor-pointer hover:op-100
+        text-lg
+        to="/articles"
       >
-        <component
-          :is="icon.name"
-          :class="[icon.style, icon.activePage.includes(page?.pageName as string) ? icon.active : 'text-gray-400']" cursor-pointer w-5 h-5
-        />
+        Blogs
       </NuxtLink>
-    </div>
-    <div>
-      <DarkToggle w-7 h-7 />
+
+      <NuxtLink
+        transition-all transition-duration-500
+        op-50 cursor-pointer hover:op-100
+        text-lg
+        to="/projects"
+      >
+        Projects
+      </NuxtLink>
+
+      <DarkToggle text-lg />
     </div>
   </header>
 </template>

@@ -4,8 +4,10 @@ pageName: articles-index
 ogImage:
   component: NuxtSeo
 circle:
-  top: 50
-  left: 50
+  greenTop: 35
+  greenLeft: 35
+  blueTop: 55
+  blueLeft: 55
 ---
 
 ::ArticleList

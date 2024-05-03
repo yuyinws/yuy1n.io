@@ -2,8 +2,10 @@
 title: Welcome 🥰
 pageName: Home
 circle:
-  top: 30
-  left: 30
+  greenTop: 25
+  greenLeft: 25
+  blueTop: 75
+  blueLeft: 75
 ---
 
 ::Home
