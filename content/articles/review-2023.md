@@ -3,6 +3,7 @@ pageName: articles
 layout: article
 title: 我的2023年开源总结
 date: 2023-12-25
+yearLast: true
 ---
 
 ## GitHub 2023

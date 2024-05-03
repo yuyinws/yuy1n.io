@@ -47,7 +47,3 @@ const { page } = useContent()
     </div>
   </header>
 </template>
-
-<style>
-
-</style>

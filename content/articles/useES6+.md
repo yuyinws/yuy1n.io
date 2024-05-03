@@ -3,6 +3,7 @@ pageName: articles
 layout: article
 title: ES6+
 date: 2021-11-29
+yearLast: true
 ---
 
 ## 变量赋值

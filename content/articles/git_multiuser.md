@@ -5,6 +5,7 @@ title: Git多用户管理
 date: 2022-08-28
 ogImage:
   component: NuxtSeo
+yearLast: true
 ---
 
 ## 使用场景

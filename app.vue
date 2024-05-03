@@ -2,4 +2,5 @@
   <AppLayout>
     <NuxtPage />
   </AppLayout>
+  <Circle />
 </template>

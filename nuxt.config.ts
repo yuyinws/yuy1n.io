@@ -50,6 +50,7 @@ export default defineNuxtConfig({
         },
       },
     ],
+    'unplugin-turbo-console/nuxt',
   ],
   css: [
     'assets/style/main.css',
@@ -79,6 +80,9 @@ export default defineNuxtConfig({
     '/articles/**': { prerender: true },
     '/': { prerender: true },
     '/articles': { prerender: true },
+    '/__og-image__/**': {
+      prerender: true,
+    },
   },
   nitro: {
     prerender: {
