@@ -31,6 +31,11 @@ export default defineNuxtConfig({
       enabled: true,
     },
   },
+  appConfig: {
+    umami: {
+      customEndpoint: '/api/send',
+    },
+  },
   extends: ['@nuxt-themes/typography', 'nuxt-umami'],
   modules: [
     '@nuxt/content',
