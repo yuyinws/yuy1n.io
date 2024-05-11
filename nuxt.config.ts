@@ -31,7 +31,7 @@ export default defineNuxtConfig({
       enabled: true,
     },
   },
-  extends: '@nuxt-themes/typography',
+  extends: ['@nuxt-themes/typography', 'nuxt-umami'],
   modules: [
     '@nuxt/content',
     '@unocss/nuxt',

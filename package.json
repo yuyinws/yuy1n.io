@@ -12,7 +12,8 @@
   "dependencies": {
     "@nuxtjs/color-mode": "^3.4.1",
     "@nuxtjs/seo": "2.0.0-rc.10",
-    "@vueuse/nuxt": "^10.9.0"
+    "@vueuse/nuxt": "^10.9.0",
+    "nuxt-umami": "^2.6.1"
   },
   "devDependencies": {
     "@antfu/eslint-config": "^2.16.1",
