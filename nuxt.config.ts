@@ -64,7 +64,7 @@ export default defineNuxtConfig({
   content: {
     documentDriven: true,
     highlight: {
-      preload: ['ini'],
+      preload: ['ini', 'diff', 'toml'],
       theme: {
         // Default theme (same as single string)
         default: 'vitesse-light',
