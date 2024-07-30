@@ -2,7 +2,6 @@
 import { getCollection } from "astro:content"
 import PageLayout from "@layouts/PageLayout.astro"
 import ArrowCard from "@components/ArrowCard"
-import StackCard from "@components/StackCard.astro"
 import { SITE, SOCIALS } from "@consts"
 import TwinklingStars from "@components/TwinklingStars.astro"
 import MeteorShower from "@components/MeteorShower.astro"
@@ -15,7 +14,6 @@ const posts = (await getCollection("blog"))
 
 const projects = (await getCollection("projects"))
   .filter(project => !project.data.draft)
-  .sort((a, b) => b.data.date.getTime() - a.data.date.getTime())
   .slice(0,3)
 ---
 
@@ -64,14 +62,20 @@ const projects = (await getCollection("projects"))
             Leo
           </p>
           <p class='animated text-sm md:text-base lg:text-lg opacity-75'>
-            Currently designing products for humans.
+            <code class="font-semibold">
+              Frontend Developer •
+            </code>
+            
+            <code class="font-semibold">
+              Opensource Enthusiasts
+            </code>
           </p>
           <div id="ctaButtons" class='animated flex flex-wrap gap-4 justify-center mt-5'>
             <a href='/blog' class='py-2 px-4 rounded truncate text-xs md:text-sm lg:text-base bg-black dark:bg-white text-white dark:text-black hover:opacity-75 blend'>
               Read my blog
             </a>
             <a href='/work' class='py-2 px-4 truncate rounded text-xs md:text-sm lg:text-base border border-black/25 dark:border-white/25 hover:bg-black/5 hover:dark:bg-white/15 blend'>
-              View my work
+              View my projects
             </a>
           </div>
         </div>
@@ -92,6 +96,16 @@ const projects = (await getCollection("projects"))
           <p>Now</p>
           <p>I currently work as a software engineer at StreamlineFS, where I do product planning, design and development.</p>
         </article>
+      </section>
+
+      <section class="animate">
+        <div>
+          <p class="font-semibold text-black dark:text-white">
+            Skills
+          </p>
+          <p>
+            I create with:
+          </p>
       </section>
 
       <!-- Blog Preview Section -->
@@ -123,7 +137,7 @@ const projects = (await getCollection("projects"))
         <div class="space-y-4">
           <div class="flex justify-between">
             <p class="font-semibold text-black dark:text-white">
-              Recent projects
+              Projects
             </p>
             <a href="/projects" class="w-fit col-span-3 group flex gap-1 items-center underline decoration-[.5px] decoration-black/25 dark:decoration-white/50 hover:decoration-black dark:hover:decoration-white text-black dark:text-white underline-offset-2 blend">
               <span class="text-black/75 dark:text-white/75 group-hover:text-black group-hover:dark:text-white blend">
@@ -140,6 +154,8 @@ const projects = (await getCollection("projects"))
           </ul>
         </div>
       </section>
+
+
 
       <!-- Contact Section -->
       <section class="animate">
