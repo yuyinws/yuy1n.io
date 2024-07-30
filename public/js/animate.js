@@ -5,8 +5,8 @@ function animate() {
     setTimeout(() => {
       element.classList.add('show')
     }, index * 150)
-  });
+  })
 }
 
-document.addEventListener("DOMContentLoaded", animate)
-document.addEventListener("astro:after-swap", animate)
+document.addEventListener('DOMContentLoaded', animate)
+document.addEventListener('astro:after-swap', animate)

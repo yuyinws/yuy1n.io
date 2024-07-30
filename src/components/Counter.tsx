@@ -1,4 +1,4 @@
-import { createSignal } from "solid-js"
+import { createSignal } from 'solid-js'
 
 function CounterButton() {
   const [count, setCount] = createSignal(0)
@@ -11,7 +11,11 @@ function CounterButton() {
         Increment
       </button>
       <div>
-       Clicked {count()} {count() === 1 ? "time" : "times"}
+        Clicked
+        {' '}
+        {count()}
+        {' '}
+        {count() === 1 ? 'time' : 'times'}
       </div>
     </div>
 

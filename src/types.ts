@@ -1,4 +1,4 @@
-export type Page = {
+export interface Page {
   TITLE: string
   DESCRIPTION: string
 }
