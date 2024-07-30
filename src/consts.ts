@@ -55,19 +55,19 @@ export const LINKS: Links = [
 export const SOCIALS: Socials = [
   {
     NAME: 'Email',
-    ICON: 'email',
+    ICON: 'heroicons:envelope',
     TEXT: 'hi@yuy1n.io',
     HREF: 'mailto:hi@yuy1n.io',
   },
   {
     NAME: 'Github',
-    ICON: 'github',
+    ICON: 'ri:github-fill',
     TEXT: '@Leo',
     HREF: 'https://github.com/yuyinws',
   },
   {
     NAME: 'Twitter',
-    ICON: 'twitter-x',
+    ICON: 'ri:twitter-x-line',
     TEXT: '@Leo',
     HREF: 'https://x.com/yuyinws',
   },
