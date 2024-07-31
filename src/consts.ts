@@ -72,3 +72,57 @@ export const SOCIALS: Socials = [
     HREF: 'https://x.com/yuyinws',
   },
 ]
+
+// Skills
+export const SKILLS = [
+  {
+    text: 'TypeScript',
+    icon: 'logos:typescript-icon',
+    href: 'https://www.typescriptlang.org',
+  },
+  {
+    text: 'Node.js',
+    icon: 'logos:nodejs-icon',
+    href: 'https://nodejs.org',
+  },
+  {
+    text: 'Vue',
+    icon: 'logos:vue',
+    href: 'https://vuejs.org',
+  },
+  {
+    text: 'Nuxt',
+    icon: 'logos:nuxt-icon',
+    href: 'https://nuxt.com',
+  },
+  {
+    text: 'Astro',
+    icon: 'logos:astro-icon',
+    href: 'https://astro.build',
+  },
+  {
+    text: 'UnoCSS',
+    icon: 'logos:unocss',
+    href: 'https://unocss.dev',
+  },
+  {
+    text: 'Tailwind',
+    icon: 'logos:tailwindcss-icon',
+    href: 'https://tailwindcss.com',
+  },
+  {
+    text: 'tRPC',
+    icon: 'logos:trpc',
+    href: 'https://trpc.io',
+  },
+  {
+    text: 'Vercel',
+    icon: 'logos:vercel-icon',
+    href: 'https://vercel.com',
+  },
+  {
+    text: 'Docker',
+    icon: 'logos:docker-icon',
+    href: 'https://www.docker.com',
+  },
+]

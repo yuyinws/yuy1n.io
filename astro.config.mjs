@@ -13,6 +13,8 @@ export default defineConfig({
     sitemap(),
     solidJs(),
     tailwind({ applyBaseStyles: false }),
-    icon(),
+    icon({
+      iconDir: 'src/assets/icons',
+    }),
   ],
 })
