@@ -1,0 +1,15 @@
+---
+interface Props {
+  host: string;
+  id: string;
+}
+
+const { host, id } = Astro.props;
+---
+
+<script
+  defer
+  is:inline
+  src={`${host}/script.js`}
+  data-website-id={id}
+  data-domains="yuy1n.io"></script>
