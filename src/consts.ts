@@ -31,6 +31,12 @@ export const SEARCH: Page = {
   DESCRIPTION: 'Search all posts and projects by keyword.',
 }
 
+// Tools Page
+export const TOOLS: Page = {
+  TITLE: 'Tools',
+  DESCRIPTION: 'Tools I am using.',
+}
+
 // Links
 export const LINKS: Links = [
   {
@@ -48,6 +54,10 @@ export const LINKS: Links = [
   {
     TEXT: 'Projects',
     HREF: '/projects',
+  },
+  {
+    TEXT: 'Tools',
+    HREF: '/tools',
   },
 ]
 
@@ -102,7 +112,7 @@ export const SKILLS = [
   },
   {
     text: 'UnoCSS',
-    icon: 'logos:unocss',
+    icon: 'simple-icons:unocss',
     href: 'https://unocss.dev',
   },
   {
@@ -117,7 +127,7 @@ export const SKILLS = [
   },
   {
     text: 'Vercel',
-    icon: 'logos:vercel-icon',
+    icon: 'simple-icons:vercel',
     href: 'https://vercel.com',
   },
   {

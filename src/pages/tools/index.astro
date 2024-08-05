@@ -1,0 +1,83 @@
+---
+import PageLayout from "@layouts/PageLayout.astro";
+import TopLayout from "@layouts/TopLayout.astro";
+import BottomLayout from "@layouts/BottomLayout.astro";
+import { TOOLS } from "@consts";
+import StackCard from "@components/StackCard.astro";
+
+const datas = {
+  Software: [
+    {
+      text: "VS Code",
+      icon: "simple-icons:visualstudiocode",
+      href: "https://code.visualstudio.com",
+    },
+    {
+      text: "iTerm2",
+      icon: "simple-icons:iterm2",
+      href: "https://www.iterm2.com",
+    },
+    {
+      text: "Raycast",
+      icon: "simple-icons:raycast",
+      href: "https://raycast.com",
+    },
+    {
+      text: "OrbStack",
+      icon: "simple-icons:docker",
+      href: "https://orbstack.dev",
+    },
+    {
+      text: "CleanShot X",
+      icon: "",
+      href: "https://cleanshot.com/",
+    },
+  ],
+  Deploy: [
+    {
+      text: "Vercel",
+      icon: "simple-icons:vercel",
+      href: "https://vercel.com",
+    },
+    {
+      text: "Netlify",
+      icon: "simple-icons:netlify",
+      href: "https://www.netlify.com",
+    },
+  ],
+  Design: [
+    {
+      text: "Figma",
+      icon: "simple-icons:figma",
+      href: "https://www.figma.com",
+    },
+    {
+      text: "OnePageLove",
+      icon: "",
+      href: "https://onepagelove.com/",
+    },
+  ],
+};
+---
+
+<PageLayout title={TOOLS.TITLE} description={TOOLS.DESCRIPTION}>
+  <TopLayout>
+    <div class="animate page-heading">{TOOLS.DESCRIPTION}</div>
+  </TopLayout>
+  <BottomLayout>
+    <div class="animate">
+      {
+        Object.entries(datas).map(([key, value]) => (
+          <div class="mt-5">
+            <h3 class="font-semibold text-black dark:text-white">{key}</h3>
+            <div class="flex flex-wrap items-center gap-2 mt-5">
+              {value.map((item) => (
+                <StackCard text={item.text} icon={item.icon} href={item.href} />
+              ))}
+            </div>
+          </div>
+        ))
+      }
+    </div>
+  </BottomLayout>
+</PageLayout>

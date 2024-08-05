@@ -5,7 +5,7 @@ draft: false
 tags:
 - Nuxt
 - DX
-repoUrl: https://github.com/yuyinws/steam-card
+repoUrl: https://github.com/yuyinws/nuxt-module-intellisense
 ---
 
 A VS Code extension for help you autocomplete Nuxt Module.
