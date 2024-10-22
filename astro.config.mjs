@@ -7,7 +7,7 @@ import icon from 'astro-icon'
 
 // https://astro.build/config
 export default defineConfig({
-  site: 'https://astro-sphere-demo.vercel.app',
+  site: 'https://yuy1n.io',
   integrations: [
     mdx(),
     sitemap(),

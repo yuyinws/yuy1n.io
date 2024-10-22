@@ -25,5 +25,11 @@ export async function GET(context: Context) {
         ? `/blog/${item.slug}/`
         : `/projects/${item.slug}/`,
     })),
+    customData: `
+      <follow_challenge>
+        <feedId>71464213122076672</feedId>
+        <userId>41391488095027200</userId>
+      </follow_challenge>
+    `,
   })
 }
