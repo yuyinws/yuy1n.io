@@ -1,14 +1,14 @@
 ---
 title: "Git 多用户管理"
-summary: ""
+summary: "111"
 date: "2022-08-28"
 tags:
-- Git
+  - Git
 ---
 
 ## 使用场景
 
-有时我们需要往多个不同的Git远程地址推送代码，比如Github、Gitlab或公司自建的Git。这时候就需要用到Git多用户管理的功能。
+有时我们需要往多个不同的Git远程地址推送代码，比如Github、Gitlab或公司自建的Git。这时候就需要用到Git多用户管理的功能。.
 
 ## 配置方法
 
